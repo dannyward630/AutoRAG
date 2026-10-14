@@ -118,6 +118,7 @@ describe("AutoRAGAgent", () => {
 		const agent = new AutoRAGAgent({
 			model: fakeModel(),
 			searchPaths: [FIXTURE_DIR],
+			jikji: false,
 			memoryPath: join(tmpDir, "memory.json"),
 			searchTimeoutMs: 10,
 		});
